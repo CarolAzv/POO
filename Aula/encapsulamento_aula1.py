@@ -1,3 +1,5 @@
+import math
+
 #Entidade
 class Triangulo:
   def_init_(self):
@@ -5,6 +7,19 @@ class Triangulo:
     self.h = 0
   def calc_area(self):
 return self.b * self.h/2
+
+class Retangulo:
+  def_init_(self):
+    self.b = 0
+    self.h = 0
+  def calc_area(self):
+return self.b * self.h
+
+class Circulo:
+  def_init_(self):
+    self.r = 0
+  def calc_area(self):
+return math.PI * self.r ** 2
 
 class UI:
  @staticmethod
