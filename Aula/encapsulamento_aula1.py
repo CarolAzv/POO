@@ -3,9 +3,8 @@ class Triangulo:
   def_init_(self):
     self.b = 0
     self.h = 0
-  def calc+area(self):
+  def calc_area(self):
 return self.b * self.h/2
- 
 
 class UI:
  @staticmethod
