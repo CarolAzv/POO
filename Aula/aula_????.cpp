@@ -4,6 +4,7 @@ int main() {
   int z;
 
   int *p = &y;
+  int *q = new int;
   p = p + 1
 
   count << x << " " << &x << endl;
