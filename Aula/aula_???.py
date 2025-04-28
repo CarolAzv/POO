@@ -1,3 +1,9 @@
-q = int()
+x = int()
 
-ptiny(q)
+y = 0
+z = 0
+
+print(x)
+print(id(x))
+print(id(y))
+print(id(z))
