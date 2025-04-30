@@ -11,3 +11,4 @@ class UI:
         x.set_base(30)
         x.set_altura(40)
         print(x.calc_area())
+#to do right
