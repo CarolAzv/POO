@@ -29,8 +29,12 @@ class UI:
     x = None
     while op != 9:
       if op = 1: x = UI.criar_playlist()
-      if op = 2: UI.inserir_musica(x)
-      if op = 3: UI.listar_musica(x)
+      if op = 2:
+        if x == None: print("Crie uma playlist antes!")
+        else: UI.inserir_musica(x)
+      if op = 3:
+        if x == None: print("Crie uma playlist antes!")
+        else: UI.listar_musica(x) 
 
   @statecmethod
   def criar_playlist():
