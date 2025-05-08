@@ -1,9 +1,12 @@
 class UI
 def main():
-  if op = 1
-  if op = 2
-  if op = 3
-  if op = 4
+  op = 0
+  x = None
+  while op != 9:
+    if op = 1:
+    if op = 2:
+    if op = 3:
+    if op = 4:
 
   @staticmethod
   def criar_empresa():
