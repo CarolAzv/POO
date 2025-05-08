@@ -18,21 +18,28 @@ class Cliente:
   def__init__(self, nome), limite:
     if nome == "": raise ValueError("Nome não pode ser vazio")
     if limite <= 0: raise ValueError("Limite tem que ser positivo")
-    self.__nome = nome
-    self.__limite = limite
-    self.__socio = None
+      self.__nome = nome
+      self.__limite = limite
+      self.__socio = None
   def set_nome(self, nome):
     self.__nome = nome
   def get_nome(self):
     return self.__nome
   def set_limite(self, limite):
     if limite <= 0: raise ValueError("Limite tem que ser positivo")
-    self.__limite = limite
+    else: self.__limite = limite
   def get_limite(self):
     return self.__limit
   def set_socio(self, c):
-    self.__socio = c
-    c.__social = self
+    if self.__socio != Nome:
+      x = self.__socio
+      x.__socio = None
+    if c.__socio != None:
+      y = c.__socio
+      y.__socio = None
+    else:
+      self.__socio = c
+      c.__social = self
   def get_socio(self):
     return self.__socio
   def__str__(self):
