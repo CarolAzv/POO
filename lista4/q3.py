@@ -1,3 +1,38 @@
+class UI
+def main():
+  if op = 1
+  if op = 2
+  if op = 3
+  if op = 4
+
+  @staticmethod
+  def criar_empresa():
+    nome = input("Informe o noem da impresa: ")
+
+  @staticmethod
+  def criar_empresa():
+    nome = input("Informe o noem da impresa: ")
+
+  @staticmethod
+  def listar_clientes(x):
+    print(x)
+    for cliente in x.listar():
+      print(" ", cliente)
+
+  @staticmethod
+  def defenir_sociedade():
+    print(x)
+    n = 0
+    clientes = x.listar()
+    for cliente in x.listar():
+      print(x, "-", cliente)
+      n += 1
+    a = int(input("Informe o n do 1 cliente: ")
+    b = int(input("Informe o n do 2 cliente: ")
+    clientes[a].set_social(cliente[b])
+Ui.main()
+
+
 class Empresa:
   def__init__(self, nome):
   if nome == "": raise ValueError("Nome não pode ser vazio")
@@ -37,16 +72,17 @@ class Cliente:
     if c.__socio != None:
       y = c.__socio
       y.__socio = None
-    else:
-      self.__socio = c
+    self.__socio = c
       c.__social = self
   def get_socio(self):
     return self.__socio
   def__str__(self):
     if self.__socio == None:
-      return f"(self.__nome), seu limite de crédito é R$ (self.__limite)"
+      return f"(self.__nome), seu limite individual é R$ (self.__limite)"
     else:
-      return f"(self.__nome), seu limite de crédito é R$ (self.__limite), seu sócio é (self.__socio.__nome)"
+      s = f"(self.__nome), seu limite individual é R$ (self.__limite), seu sócio é (self.__socio.__nome)"
+      s += f", seu limite total é (self.get_limite())"
+      s += f"()"
 
 
 x = impresa("IFRN")
