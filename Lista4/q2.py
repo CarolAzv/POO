@@ -1,38 +1,38 @@
 class playList:
-  def__init__(self, nome, descrição):
+  def __init__(self, nome, descrição):
     self.__nome = nome
     self.__descrição = descrição
     self.__musicas = []
   def inserir(self, m):
-    sef.__musicas.append(m)
+    self.__musicas.append(m)
   def listar(self):
     return self.__musicas
-  def__str__(self):
+  def __str__(self):
     return f"PlayList (self.__nome) tem (len(self.__musicas)) musica(s)"
 
 class Musica:
-  def__init__(self, titulo, artista, album):
+  def __init__(self, titulo, artista, album):
     self.__titulo = titulo
     self.__artista = artista
     self.__album = album
-  def__str__(self):
-    return f"(self.__titulo) - (self.__artista) - (self.__album)"
+  def __str__(self):
+    return f"{self.__titulo} - (self.__artista) - (self.__album)"
     
 class UI:
   @statecmethod
   def menu():
-    print("Menu: 1-Criar PlayList, 2-Inserir Musica. 3- listar Musica, 9-Fim"
+    print("Menu: 1-Criar PlayList, 2-Inserir Musica. 3- listar Musica, 9-Fim")
 
   @statecmethod
   def mein():
     op = 0
     x = None
     while op != 9:
-      if op = 1: x = UI.criar_playlist()
-      if op = 2:
+      if op == 1: x = UI.criar_playlist()
+      if op == 2:
         if x == None: print("Crie uma playlist antes!")
         else: UI.inserir_musica(x)
-      if op = 3:
+      if op == 3:
         if x == None: print("Crie uma playlist antes!")
         else: UI.listar_musica(x) 
 
