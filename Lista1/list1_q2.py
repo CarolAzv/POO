@@ -2,7 +2,7 @@ class Viagem:
     def __init__(self, dist, tempo):
         self.__dist = dist
         self.__tempo = tempo
-        self.__vel = 0
+        self.__vel = self.get_vel
 
     def set_vel(self, vel):
         self.__vel = vel
@@ -28,8 +28,7 @@ class Viagem:
         return get_vel
 
     def __str__(self):
-        g = self.get_vel()
-        return f"Viagaram por {self.__dist}Km, por {self.__tempo} hora(s) a {g}Km/h"
+        return f"Viagaram por {self.__dist}Km, por {self.__tempo} hora(s) a {self.__vel}Km/h"
 
 
 x = Viagem(100, 2.5)
