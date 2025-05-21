@@ -23,8 +23,8 @@ class Viagem:
 
 
     def veloc(self, dist, tempo):
-        vel = (get_dist)/(get_tempo)
-        set_vel(self, vel)
+        vel = (self.get_dist())/(self.get_tempo())
+        self.set_vel(vel)
         return get_vel
 
     def __str__(self):
