@@ -21,12 +21,6 @@ class Viagem:
     def get_tempo(self):
         return self.__tempo
 
-
-    def veloc(self, dist, tempo):
-        vel = (self.get_dist())/(self.get_tempo())
-        self.set_vel(vel)
-        return get_vel
-
     def __str__(self):
         return f"Viagaram por {self.__dist}Km, por {self.__tempo} hora(s) a {self.__vel}Km/h"
 
