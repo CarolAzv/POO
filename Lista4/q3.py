@@ -37,7 +37,7 @@ Ui.main()
 
 
 class Empresa:
-  def__init__(self, nome):
+  def __init__(self, nome):
   if nome == "": raise ValueError("Nome não pode ser vazio")
     self.__nome = nome
     self.__clientes = []
@@ -53,7 +53,7 @@ class Empresa:
     return f"(self.__nome) tem (len(self.__clientes)) cliente(s)"
 
 class Cliente:
-  def__init__(self, nome), limite:
+  def __init__(self, nome), limite:
     if nome == "": raise ValueError("Nome não pode ser vazio")
     if limite <= 0: raise ValueError("Limite tem que ser positivo")
       self.__nome = nome
@@ -86,6 +86,7 @@ class Cliente:
       s = f"(self.__nome), seu limite individual é R$ (self.__limite), seu sócio é (self.__socio.__nome)"
       s += f", seu limite total é (self.get_limite())"
       s += f"()"
+      return s
 
 
 x = impresa("IFRN")
