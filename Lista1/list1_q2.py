@@ -28,15 +28,8 @@ class Viagem:
         return get_vel
 
     def __str__(self):
-        f = "Viagaram por "
-        f += str(self.__dist)
-        f += "Km, por "
-        f += str(self.__tempo)
-        f += " hora(s) a "
-        f += str(self.get_vel())
-        f += "Km/h"
-        return f
-        #return f"Viagaram por {}Km, por {} hora(s) a {}Km/h".format(self.__dist, self.__tempo, self.__vel))
+        g = self.get_vel()
+        return f"Viagaram por {self.__dist}Km, por {self.__tempo} hora(s) a {g}Km/h"
 
 
 x = Viagem(100, 2.5)
