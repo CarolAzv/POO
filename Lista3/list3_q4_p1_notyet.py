@@ -4,6 +4,8 @@ class Equação2g():
         self.__b = b
         self.__c = c
         self.__delta = self.Delta()
+        self.__raiz1 = self.Raiz1()
+        self.__raiz2 = self.Raiz2()
 
     def set_a(self, a):
         self.__a = a
@@ -31,4 +33,6 @@ class Equação2g():
         raiz = raiz / (2 * self.__a)
         return raiz
     def TemRaizesReais(self):
-        
+
+    def __str__(self):
+        return f""
