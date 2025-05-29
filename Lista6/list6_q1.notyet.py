@@ -43,3 +43,26 @@ class Clientes:
     def Abrir(self):
 
     def Salvar(self):
+
+class UI:
+    @statecmethod
+    def menu():
+        print("Menu: 1-Criar Cliente, 2-Listar Clientes. 3-Enserir Clientes, 4-Atualizar Cliente, 5-Excluir Cliente, 9-Fim")
+
+    @statecmethod
+    def mein():
+        op = 0
+        x = None
+        while op != 9:
+            if op == 1: x = UI.criar_cliente()
+            if op == 2:
+                UI.inserir_musica(x)
+            if op == 3:
+                UI.listar_musica(x)
+            if op == 4:
+                UI.listar_musica(x)
+            if op == 5:
+                UI.listar_musica(x)
+    
+    @statecmethod
+    def criar_cliente():
