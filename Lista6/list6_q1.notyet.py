@@ -14,13 +14,13 @@ class Cliente:
     def set_fone(self, fone):
         self.__fone = fone
 
-    def get_id(self, id):
+    def get_id(self):
         return self.__id
-    def get_nome(self, nome):
+    def get_nome(self):
         return self.__nome
-    def get_email(self, email):
+    def get_email(self):
         return self.__email
-    def get_fone(self, fone):
+    def get_fone(self):
         return self.__fone
     
     def __str__(self):
@@ -28,41 +28,38 @@ class Cliente:
 
 class Clientes:
     def __init__(self):
-        self.__
+        self.__clientes = []
 
-    def set_cliente(self):
-
+    def set_cliente(self, c):
+        self.__clientes.append(c)
     def Listar(self):
-
-    def Listar_id(self):
-
-    def Atualizar(self):
-
-    def Excluir(self):
-
-    def Abrir(self):
-
-    def Salvar(self):
+        return self.__clientes
+    #def Listar_id(self):
+        #return self.__clientes.id
+    def Atualizar(self, old, new):
+        index = self.__clientes.index(old)
+        self.__clientes[index] = new
+    def Excluir(self, c):
+        index = self.__clientes.index(c)
+        self.__clientes.pop(index)
+    #def Abrir(self):
+    #def Salvar(self):
 
 class UI:
     @statecmethod
     def menu():
-        print("Menu: 1-Criar Cliente, 2-Listar Clientes. 3-Enserir Clientes, 4-Atualizar Cliente, 5-Excluir Cliente, 9-Fim")
+        print("Menu: 1-Listar Clientes. 2-Enserir Clientes, 3-Atualizar Cliente, 4-Excluir Cliente, 9-Fim")
 
     @statecmethod
     def mein():
         op = 0
         x = None
         while op != 9:
-            if op == 1: x = UI.criar_cliente()
+            if op == 1:
+                x = Clientes.Listar()
             if op == 2:
-                UI.inserir_musica(x)
+                Clientes.set_cliente()
             if op == 3:
-                UI.listar_musica(x)
+                Clientes.Atualizar()
             if op == 4:
-                UI.listar_musica(x)
-            if op == 5:
-                UI.listar_musica(x)
-    
-    @statecmethod
-    def criar_cliente():
+                Clientes.Excluir()
