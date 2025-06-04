@@ -35,7 +35,7 @@ class Clientes:
     def Listar(self):
         return self.__clientes
     #def Listar_id(self):
-        #return self.__clientes.id
+        #return self.__clientes.Cliente.self__id
     def Atualizar(self, old, new):
         index = self.__clientes.index(old)
         self.__clientes[index] = new
@@ -46,20 +46,38 @@ class Clientes:
     #def Salvar(self):
 
 class UI:
-    @statecmethod
+    @staticmethod
     def menu():
-        print("Menu: 1-Listar Clientes. 2-Enserir Clientes, 3-Atualizar Cliente, 4-Excluir Cliente, 9-Fim")
+        return int(input("Menu: 1-Listar Clientes. 2-Enserir Clientes, 3-Atualizar Cliente, 4-Excluir Cliente, 9-Fim"))
 
-    @statecmethod
-    def mein():
+    @staticmethod
+    def main():
         op = 0
         x = None
         while op != 9:
+            op = UI.menu()
             if op == 1:
-                x = Clientes.Listar()
+                x = UI.Listar_Clientes()
             if op == 2:
-                Clientes.set_cliente()
+                x =Clientes.set_cliente()
             if op == 3:
-                Clientes.Atualizar()
+                x =Clientes.Atualizar()
             if op == 4:
-                Clientes.Excluir()
+                x = Clientes.Excluir()
+
+    @staticmethod
+    def Listar_Clientes(x):
+        print(x)
+        for Cliente in x.Listar():
+            print(" ", Clientes)
+
+
+UI.main()
+
+self, id, nome, email, fone
+x = Cliente(123, "Shelly", "@sure", 199)
+y = Cliente(254, "Arthur", "@HEY!", 181)
+
+a = Clientes()
+a.append(x)
+a.append(y)
