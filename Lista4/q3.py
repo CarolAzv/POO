@@ -13,10 +13,6 @@ class UI:
     nome = input("Informe o nome da impresa: ")
 
   @staticmethod
-  def criar_empresa():
-    nome = input("Informe o nome da impresa: ")
-
-  @staticmethod
   def listar_clientes(x):
     print(x)
     for cliente in x.listar():
