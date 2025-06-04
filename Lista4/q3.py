@@ -10,11 +10,11 @@ class UI:
 
   @staticmethod
   def criar_empresa():
-    nome = input("Informe o noem da impresa: ")
+    nome = input("Informe o nome da impresa: ")
 
   @staticmethod
   def criar_empresa():
-    nome = input("Informe o noem da impresa: ")
+    nome = input("Informe o nome da impresa: ")
 
   @staticmethod
   def listar_clientes(x):
