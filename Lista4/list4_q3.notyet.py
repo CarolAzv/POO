@@ -60,7 +60,7 @@ class UI:
             if opt == 2:
                 x = UI.listar_clientes
             if opt == 3:
-            if opt == 9:
+                x = UI.defenir_sociedade
 
 
 
@@ -93,5 +93,3 @@ a = Cliente("Bianca", 155.732156012, 2500, "")
 b = Cliente("Andre", 105.235789343, 5000, "")
 x.Inserir(a)
 x.Inserir(b)
-
-print(x.Listar())
